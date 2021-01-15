@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import ContactComp from '../components/ContactComp';
 import NavTabs2 from '../components/NavTabs2';
-import e from 'express';
+// import e from 'express';
 
 function Contact() {
     const [formState, setFormState] = useState({
@@ -31,7 +31,7 @@ function Contact() {
         setFormState({ email: e.target.value })
     };
     // OCCUPATION event handler
-    function onOccupationChange() {
+    function onOccupationChange(e) {
         setFormState({ occupation: e.target.value })
     };
     // SUBJECT event handler
@@ -56,18 +56,19 @@ function Contact() {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
-        axios({
-            method: "POST",
-            url: "http://localhost:3000/send",
-            data: formState
-        }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Message Sent.");
-                resetForm();
-            } else if (response.data.status === 'fail') {
-                alert("Message failed to send.")
-            }
-        })
+        resetForm();
+        // axios({
+        //     method: "POST",
+        //     url: "http://localhost:3000/send",
+        //     data: formState
+        // }).then((response) => {
+        //     if (response.data.status === 'success') {
+        //         alert("Message Sent.");
+        //         resetForm();
+        //     } else if (response.data.status === 'fail') {
+        //         alert("Message failed to send.")
+        //     }
+        // })
     };
 
 
