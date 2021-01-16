@@ -11,6 +11,9 @@ import Home from './pages/Home';
 import homeImage from './assets/homeImage.jpg';
 import aboutImage from './assets/aboutImage.jpg';
 import contactImage from './assets/contactImage.png';
+import edevName1 from './assets/headerAssets/header01/edev01.jpg'
+import edevName2 from './assets/headerAssets/header02/edev02.jpg'
+import edevName3 from './assets/headerAssets/header03/edev03.jpg'
 
 
 function App() {
@@ -25,15 +28,15 @@ function App() {
 
   function handleChange() {
     if (currentLocation === '/') {
-      setHeaderImage(homeImage);
+      setHeaderImage(edevName1);
       setMainImage(homeImage);
       // setNavState(false);
     } else if (currentLocation === '/about') {
-      setHeaderImage(aboutImage);
+      setHeaderImage(edevName3);
       setMainImage(aboutImage);
       // setNavState(true);
     } else if (currentLocation === '/contact') {
-      setHeaderImage(contactImage);
+      setHeaderImage(edevName2);
       setMainImage(contactImage);
       // setNavState(true);
     }
