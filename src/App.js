@@ -28,17 +28,11 @@ function App() {
 
   function handleChange() {
     if (currentLocation === '/') {
-      // setHeaderImage(edevName1);
       setMainImage(homeImage);
-      // setNavState(false);
-    } else if (currentLocation === '/about') {
-      // setHeaderImage(edevName3);
-      setMainImage(aboutImage);
-      // setNavState(true);
+    // } else if (currentLocation === '/about') {
+    //   setMainImage(aboutImage);
     } else if (currentLocation === '/contact') {
-      // setHeaderImage(edevName2);
       setMainImage(contactImage);
-      // setNavState(true);
     }
   };
 

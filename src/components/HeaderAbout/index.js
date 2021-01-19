@@ -1,15 +1,15 @@
 import React from 'react';
-import { Image, Container, Spinner } from 'react-bootstrap';
+import { Image, Container, Spinner, Overlay, Row, Col } from 'react-bootstrap';
 import './style.css';
 import 'animate.css';
 import headerImage from './assets/edev03.jpg';
+import Logo from './assets/reactImg.png';
 
 function HeaderAbout() {
     return (
         <div>
             <Container>
-                    <Image 
-                    id='header' src={headerImage} />
+                <Image id='header' src={headerImage}/>
             </Container>
         </div>
     )
