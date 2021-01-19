@@ -7,24 +7,28 @@ import EDB from './assets/icons/icon_eDB.jpg';
 import Pass from './assets/icons/pass-gen-img.jpg';
 import Quiz from './assets/icons/quiz-img.jpg';
 import './style.css';
+import 'animate.css';
 
 function HomeComp(props) {
     return (
-        <div>
+        <div >
             <Container >
                 <Jumbotron className='jumbotron'>
-
+                <div  >
                     <Row>
-                        <Col> <Image id='icon' src={Burger} /></Col>
-                        <Col><Image id='icon' src={Fit} /></Col>
-                        <Col><Image id='icon' src={EDB} /> </Col>
+                        
+                        <Col> <Image className='animate__animated animate__flipInX' id='icon' src={Burger} /></Col>
+
+                        <Col><Image className='animate__animated animate__flipInX' id='icon' src={Fit} /></Col>
+                        <Col><Image className='animate__animated animate__flipInX' id='icon' src={EDB} /> </Col>
                     </Row>
                     <br></br>
                     <Row>
-                        <Col><Image id='icon' src={Pass} /></Col>
-                        <Col><Image id='icon' src={Quiz} /></Col>
-                        <Col><Image id='icon'/></Col>
+                        <Col><Image className='animate__animated animate__flipInX' id='icon' src={Pass} /></Col>
+                        <Col><Image className='animate__animated animate__flipInX' id='icon' src={Quiz} /></Col>
+                        <Col><Image className='animate__animated animate__flipInX' id='icon'/></Col>
                     </Row>
+                    </div>
                 </Jumbotron>
             </Container>
         </div>

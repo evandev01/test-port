@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Container, Col, Button } from 'react-bootstrap';
 import './style.css';
+import 'animate.css';
 
 function ContactComp(props) {
     return (
@@ -10,6 +11,7 @@ function ContactComp(props) {
                     <Form.Row>
                         <Col>
                             <Form.Control 
+                            className='animate__animated animate__backInDown '
                             placeholder="First name"
                             type="text"
                             onChange={props.firstNameChange}
@@ -17,6 +19,7 @@ function ContactComp(props) {
                         </Col>
                         <Col>
                             <Form.Control 
+                            className='animate__animated animate__backInDown '
                             placeholder="Last name" 
                             type="text"
                             onChange={props.firstNameChange}/>
@@ -26,6 +29,7 @@ function ContactComp(props) {
 
                         <Form.Label>Email Address</Form.Label>
                         <Form.Control 
+                        className='animate__animated animate__backInDown '
                         placeholder="name@gmail.com"
                         type="email"  
                         onChange={props.emailChange}/>
@@ -33,6 +37,7 @@ function ContactComp(props) {
                     <Form.Group controlId="exampleForm.ControlSelect1">
                         <Form.Label>Please select: </Form.Label>
                         <Form.Control 
+                        className='animate__animated animate__backInDown '
                         as="select"
                         onChange={props.occupationChange}>
                             <option>I am: </option>
@@ -49,18 +54,22 @@ function ContactComp(props) {
                     </Form>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                         <Form.Control 
+                        className='animate__animated animate__backInDown '
                         placeholder="Subject" 
                         type="text"
                         onChange={props.subjectChange}/>
 
                         <Form.Label>Message: </Form.Label>
                         <Form.Control 
+                        className='animate__animated animate__backInDown '
                         as="textarea" 
                         rows={5} 
                         onChange={props.messageChange}/>
                     </Form.Group>
 
-                    <Button variant="primary" 
+                    <Button
+                    className='animate__animated animate__heartBeat'
+                    variant="primary" 
                     type="submit"
                     onSubmit={props.submit}>
                         Submit

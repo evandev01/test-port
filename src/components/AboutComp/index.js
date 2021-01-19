@@ -9,15 +9,15 @@ function AboutComp() {
     return (
         <div>
             <Container>
-            <Jumbotron>
+            <Jumbotron id='jumbo'>
                 <Container>
                     <Row>
                         <Col>
-                            <Image className="photo" src={Photo} alt='Photo of Evan Bero' />
-                            </Col>
-                            <Col>
-                            <h1 className='welcome'>Welcome to the evanDev React portfolio</h1>
-                            <p className='para1'>
+
+                        <Row className="justify-content-md-center">
+                            <h1 className='animate__animated animate__fadeInDown' id='welcome'>Welcome to the evanDev React portfolio</h1>
+                            <br></br>
+                            <p className='animate__animated animate__fadeIn' id='para1'>
                                 I am a full-stack developer and graduate of the UNC Charlotte Coding Bootcamp (full-stack web development program) currently seeking new opportunities.
                             <br></br>
                             <br></br>
@@ -35,8 +35,13 @@ function AboutComp() {
                             <br></br>
                             -Evan Bero
                             </p>
+                            </Row>
+                            <Row className="justify-content-md-center">
+                            <Image className="justify-content-md-center" id="photo" src={Photo} alt='Photo of Evan Bero' />
+                        </Row>
                             </Col>
-                    </Row>
+                            </Row>
+                    
                 </Container>
             </Jumbotron>
             </Container>

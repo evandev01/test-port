@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-// import axios from 'axios';
 import ContactComp from '../components/ContactComp';
-import NavTabs2 from '../components/NavTabs2';
-// import e from 'express';
+import NavTabs from '../components/NavTabs';
+import HeaderContact from '../components/HeaderContact';
 
 function Contact() {
     const [formState, setFormState] = useState({
@@ -74,7 +73,8 @@ function Contact() {
 
     return (
         <div>
-            <NavTabs2 />
+            <HeaderContact />
+            <NavTabs />
             <ContactComp
                 firstNameChange={onFirstNameChange}
                 lastNameChange={onLastNameChange}

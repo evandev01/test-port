@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Spinner } from 'react-bootstrap';
 import './style.css'
 // import { Link } from 'react-router-dom';
 
@@ -7,19 +7,62 @@ function NavTabs(props) {
     return (
         <div>
             <Container>
-                <Navbar id='navDiv' expand='lg'>
-                    <Navbar.Brand  className='home' href='/' >Portfolio</Navbar.Brand>
-                    <Navbar.Toggle aria-controls='basic-navbar-nav' />
-                    <Navbar.Collapse id='basic-navbar-nav'>
-                        <Nav  className='mr-auto'>
-                            <Nav.Link className='about' href='about'>About</Nav.Link>
-                            <Nav.Link className='contact' href='contact' >Contact</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
+                <Nav id='frosted' justify variant="tabs">
+                    <Nav.Item>
+                        <Nav.Link id='link' href="/">Portfolio</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link id='link' href='about'>About</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link id='link' href='contact'>Contact</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link id='link' href='services'>Services</Nav.Link>
+                    </Nav.Item>
+                </Nav>
             </Container>
         </div>
     )
 };
 
 export default NavTabs;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <Nav id='navDiv'>
+<Navbar>
+    <Nav.Item>
+        <Nav.Link id='link' href='/' >Portfolio</Nav.Link>
+    </Nav.Item>
+</Navbar>
+<Navbar expand='lg'>
+    <Navbar.Toggle aria-controls='basic-navbar-nav' />
+    <Navbar.Collapse id='basic-navbar-nav'>
+        <Nav className='justify-content-end'>
+            <Nav.Item>
+                <Nav.Link id='link' href='about'>About</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id='link' href='contact' >Contact</Nav.Link>
+            </Nav.Item>
+        </Nav>
+    </Navbar.Collapse>
+</Navbar>
+</Nav> */}

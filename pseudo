@@ -1,0 +1,25 @@
+Try to put carosel in header
+If it wont work, place below the navbar
+
+carosel -
+    contact{
+        When are you available?
+        How will your services help my small business?
+        How much will this cost?
+    }
+
+    about{
+        Full-stack web design
+        UI/UX Design
+        Graphic Design
+        Database Integration
+        Web Hosting
+    }
+
+
+    animate__backInRight
+
+    CSS{
+        Submit button = use micron.js or hover.CSS
+        Form = motion CSS
+    }

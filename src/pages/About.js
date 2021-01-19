@@ -1,11 +1,13 @@
 import React from 'react';
 import AboutComp from '../components/AboutComp';
-import NavTabs2 from '../components/NavTabs2';
+import NavTabs from '../components/NavTabs';
+import HeaderAbout from '../components/HeaderAbout';
 
 function About() {
     return (
         <div>
-            <NavTabs2 />
+            <HeaderAbout />
+            <NavTabs />
             <AboutComp />
         </div>
     )
