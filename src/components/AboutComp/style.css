@@ -1,3 +1,46 @@
+body {
+    background-image: url('./assets/aboutImage.jpg');
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+
+}
+@keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+#logo{
+    height: auto;
+    width: 100%;
+    max-height: 100px;
+    max-width: 100px;
+    margin-left: 1%;
+    margin-right: 1%;
+    animation: rotating 13s linear;
+    animation-iteration-count: infinite;
+}
+#logo2{
+    height: auto;
+    width: 100%;
+    max-height: 100px;
+    max-width: 100px;
+    margin-right: 1%;
+    margin-left: auto;
+    animation: rotating 13s linear;
+    animation-iteration-count: infinite;
+}
 #jumbo{
     background-color: black;
 }
@@ -6,7 +49,6 @@
     width: auto;
     max-width: 250px;
     max-height: 250px;
-    /* margin-left: 15%; */
 }
 @media screen and (max-width: 991px){
     #photo {
@@ -14,7 +56,6 @@
     width: auto;
     max-width: 200px;
     max-height: 200px;
-    /* margin-left: 15%; */
     }
 }
 
@@ -24,6 +65,7 @@
     text-align: center;
     color: whitesmoke;
     --animate-duration: 1s;
+    
 }
 @media screen and (max-width: 991px){
     #welcome {
@@ -42,6 +84,7 @@
     margin-right: 25%;
     color: whitesmoke;
     --animate-duration: 3s;
+    
 }
 @media screen and (max-width: 991px){
     #para1 {
