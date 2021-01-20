@@ -4,11 +4,10 @@ import NavTabs from '../components/NavTabs';
 import HeaderAbout from '../components/HeaderAbout';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import Logo from '../assets/reactImg.png';
-import '../App.css';
 
 function About() {
     return (
-        <div>
+        <div className='about-body'>
                 <HeaderAbout/>
                 <NavTabs />
                 <AboutComp />

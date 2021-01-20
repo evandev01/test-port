@@ -17,9 +17,6 @@ function NavTabs(props) {
                     <Nav.Item>
                         <Nav.Link id='link' href='contact'>Contact</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link id='link' href='services'>Services</Nav.Link>
-                    </Nav.Item>
                 </Nav>
             </Container>
         </div>
