@@ -8,7 +8,9 @@ import NavTabs from './components/NavTabs';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
-import homeImage from './assets/homeImage.jpg';
+// import homeImage from './assets/homeImage.jpg';
+
+import homeImage from './assets/background/colorBg3.jpg';
 import aboutImage from './assets/aboutImage.jpg';
 import contactImage from './assets/contactImage.png';
 // import edevName1 from './assets/headerAssets/header01/edev01.jpg'
