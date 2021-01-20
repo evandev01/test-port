@@ -19,34 +19,11 @@ import edevName3 from './assets/headerAssets/header03/edev03.jpg'
 
 
 function App() {
-  const [headerImage, setHeaderImage] = useState();
-  const [mainImage, setMainImage] = useState();
-  // const [navState, setNavState] = useState(false);
-  const currentLocation = (window.location.pathname);
-
-  useEffect(() => {
-    handleChange();
-  });
-
-  function handleChange() {
-    if (currentLocation === '/') {
-      setMainImage(homeImage);
-    // } else if (currentLocation === '/about') {
-    //   setMainImage(aboutImage);
-    } else if (currentLocation === '/contact') {
-      setMainImage(contactImage);
-    }
-  };
-
-  const divStyle = {
-    backgroundImage: 'url(' + mainImage + ')'
-  };
-
   return (
     <Router>
-      <div className='mainDiv' style={divStyle}>
+      <div>
 
-        {/* <Header background={headerImage} /> */}
+        
         <Route path='/' exact component={Home} />
         <Route path='/about' exact component={About} />
         <Route path='/contact' exact component={Contact} />
@@ -57,3 +34,49 @@ function App() {
 };
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// {/* <Header background={headerImage} /> */}
+
+  // const [headerImage, setHeaderImage] = useState();
+  // const [mainImage, setMainImage] = useState();
+  // // const [navState, setNavState] = useState(false);
+  // const currentLocation = (window.location.pathname);
+
+  // useEffect(() => {
+  //   handleChange();
+  // });
+
+  // function handleChange() {
+  //   if (currentLocation === '/') {
+  //     setMainImage(homeImage);
+  //     // } else if (currentLocation === '/about') {
+  //     //   setMainImage(aboutImage);
+  //   } else if (currentLocation === '/contact') {
+  //     setMainImage(contactImage);
+  //   }
+  // };
+
+  // const divStyle = {
+  //   backgroundImage: 'url(' + mainImage + ')'
+  // };
+
+
+{/* <div className='mainDiv' style={divStyle}></div> */ }

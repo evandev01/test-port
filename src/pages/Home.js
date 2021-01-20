@@ -5,7 +5,7 @@ import HeaderHome from '../components/HeaderHome';
 
 function Home() {
     return (
-        <div>
+        <div id='home-body'>
             <HeaderHome />
             <NavTabs />
             <HomeComp />
