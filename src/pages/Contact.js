@@ -72,7 +72,7 @@ function Contact() {
 
 
     return (
-        <div>
+        <div id='contact-body'>
             <HeaderContact />
             <NavTabs />
             <ContactComp

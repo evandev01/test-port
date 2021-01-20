@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, Container } from 'react-bootstrap';
 import './style.css';
 import 'animate.css';
-import headerImage from './assets/edev02.jpg';
+import headerImage from './assets/contactHeader.jpg';
 import reactImg from './assets/reactImg.png';
 
 function HeaderContact() {

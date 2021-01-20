@@ -5,7 +5,7 @@ import 'animate.css';
 
 function ContactComp(props) {
     return (
-        <div className='form'>
+        <div id='form'>
             <Container>
                 <Form>
                     <Form.Row>
