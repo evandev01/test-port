@@ -1,7 +1,6 @@
 import React from 'react';
-import { Navbar, Nav, Container, Spinner } from 'react-bootstrap';
-import './style.css'
-// import { Link } from 'react-router-dom';
+import { Nav, Container } from 'react-bootstrap';
+import './style.css';
 
 function NavTabs(props) {
     return (

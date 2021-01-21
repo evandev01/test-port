@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Container, Spinner } from 'react-bootstrap';
+import { Image, Container } from 'react-bootstrap';
 import './style.css';
 import 'animate.css';
 import headerImage from './assets/edev01.jpg';
